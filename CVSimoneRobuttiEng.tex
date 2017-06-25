@@ -1,0 +1,214 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Plasmati Graduate CV
+% LaTeX Template
+% Version 1.0 (24/3/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Alessandro Plasmati (alessandro.plasmati@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template needs to be compiled with XeLaTeX.
+% The main document font is called Fontin and can be downloaded for free
+% from here: http://www.exljbris.com/fontin.html
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[a4paper,10pt]{article} % Default font size and paper size
+\usepackage{multirow}
+\usepackage{fontspec} % For load	ing fonts
+\defaultfontfeatures{Mapping=tex-text}
+\setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin} % Main document font
+
+\usepackage{xunicode,xltxtra,url,parskip} % Formatting packages
+
+\usepackage[usenames,dvipsnames]{xcolor} % Required for specifying custom colors
+\usepackage{array}
+\usepackage[big]{layaureo} % Margin formatting of the A4 page, an alternative to layaureo can be \usepackage{fullpage}
+% To reduce the height of the top margin uncomment: \addtolength{\voffset}{-1.3cm}
+
+\usepackage{hyperref} % Required for adding links	and customizing them
+\definecolor{linkcolour}{rgb}{0,0.2,0.6} % Link color
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour} % Set link colors throughout the document
+
+\usepackage{titlesec} % Used to customize the \section command
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule] % Text formatting of sections
+\titlespacing{\section}{3pt}{4pt}{3pt} % Spacing around sections
+
+\begin{document}
+
+\newcommand{\spezzalinea}{
+	\multicolumn{1}{r}{}&\\
+}
+
+\pagestyle{empty} % Removes page numbering
+
+\font\fb=''[cmr10]'' % Change the font of the \LaTeX command under the skills section
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\par{\centering{\Huge Simone \textsc{Robutti}}\bigskip\par} % Your name
+\begin{minipage}{\textwidth}
+
+\begin{minipage}[t]{0.65\textwidth}
+\section{Personal Information}
+\begin{tabular}{rl}
+\textsc{Place and Date of Birth:} & Italy  | 2 December 1988 \\
+\textsc{Address:} & Keibelstr. 37, 10178, Berlin \\
+\textsc{Phone:} & (Ask Privately)\\
+\textsc{email:} & \href{mailto:simone.robutti@gmail.com}{simone.robutti@gmail.com}
+\end{tabular}
+
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.25\textwidth}
+\section{\hfill Keywords}
+\raggedleft
+
+Scala
+
+Apache Flink
+
+Apache Spark
+
+Python
+
+Machine Learning 
+
+ML Engineering
+
+Big Data/Fast-Data
+\end{minipage}
+
+\end{minipage}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\begin{tabular}{rp{11cm}}	
+\textsc{2013-2015} & Master Degree in \textsc{Computer Science}, \textbf{Università degli Studi di Milano}, Milan\\
+& \footnotesize{Research Thesis on the design, development and evaluation of a Support Vector approach to the  disambiguation of fuzzy and shadowed datasets in a semi-supervised context.} \\ &\small Advisor: \textsc{Prof. Dario Malchiodi} \\
+
+%------------------------------------------------
+	
+\textsc{2009-2012} & Bachelor Degree in \textsc{Computer Science}, \textbf{Università degli Studi di Milano}, Milan\\
+& \footnotesize{Thesis on the development of a highly-modular, resource agnostic tagging system for a CMS platform oriented to e-Democracy and e-participation.} \\ &\small Advisor: \textsc{Prof. Fiorella DeCindio}
+\end{tabular}
+
+
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE 
+%----------------------------------------------------------------------------------------
+\section{Work Experience}
+
+\begin{tabular}{r|p{11cm}}
+\textsc{from Nov 2016} & Data Engineer in \textsc{MotionLogic}, Milan \emph{}\\
+& \footnotesize{Development and testing of the company's core product: a system to ingest and process cellular network signals to extract complex informations through ad-hoc models and traditional aggregations. My role as a Data Engineer covered many different tasks over time: productization of existing algorithms developed by the Data Science Team, development of new models and heuristics on my own, development and maintenance of the pipeline, development of a data quality monitoring system, production and improvement of geospatial support data, performance optimization at scale.}\\
+\multicolumn{1}{c}{} \\
+	
+\textsc{from Feb 2016} & Machine Learning Engineer in \textsc{Databiz - Radicalbit}, Milan \emph{}\\
+& \footnotesize{As the only Machine Learning Engineer, my work involved designing new solutions for our customers to make use of Flink, core component of our distribution. Also I've been involved in the open-source development of FlinkML and FlinkJPMML. I had the possibility to implement many different algorithms from scratch and experiment with the many possibilities offered by the framework to carry out ML tasks at scale. Other relevant components of the distribution were: Cassandra, Kafka, Zeppelin, Alluxio.}\\
+\multicolumn{2}{c}{} \\
+
+\textsc{from Apr 2015} & Machine Learning Engineer in \textsc{Databiz}, Milan \emph{}\\
+& \footnotesize{Design and implementation of a near-real-time scoring streaming system. The end-goal was to provide the user with a flexible system based on Apache Spark to design ML pipelines for data preparation and batch learning on Knime and deploy the models created for scoring in streaming. The project involved a model repository with a front-end component, a data validation and reconciliation process. Other tools employed in the project were: HBase, JPMML, Hive, Impala.}\\
+\multicolumn{2}{c}{} \\
+
+\end{tabular}
+
+%	GRADE TABLES
+%----------------------------------------------------------------------------------------
+\section{Skills}
+\begin{tabular}{>{\Large}r|>{\large}l>{\small}l}
+	
+	\multirow{5}{*}{Programming Languages} 
+	& Python & Advanced \\
+	& Scala & Intermediate \\
+	& Java & Intermediate \\
+	& Javascript & Basic \\
+	
+	\spezzalinea
+	\multirow{3}{*}{Frameworks and Tools} 
+	& Apache Spark & Intermediate-Advanced \\
+	& Apache Flink & Intermediate \\
+	& Pandas & Intermediate\\
+	& Play! Framework & Intermediate \\
+	& Keras & Basic\\	
+	& Akka & Basic\\
+	& breeze & Basic\\
+	\spezzalinea
+	
+	\multirow{4}{*}{Machine Learning}
+	& SVM & Intermediate\\
+	& Deep Learning & Basic\\
+	& Genetic Algorithms & Basic\\
+	& ALS & Basic\\
+	& PMML & Intermediate \\
+	\spezzalinea
+	
+	\multirow{4}{*}{Database} & PostgreSQL & Intermediate \\
+	& MongoDB & Intermediate \\
+	& Cassandra/Scylla & Basic \\
+	& MariaDB/MySQL & Basic \\
+	& InfluxDB & Basic \\
+	\spezzalinea
+	
+	\multirow{5}{*}{Building systems}\\
+	& Maven \\
+	& sbt \\
+	& setuptools \\
+	 
+	\spezzalinea
+	\hline
+	\spezzalinea
+	
+	\multirow{4}{*}{Non-technical skills} 
+	
+	&Online Communication&\\
+	&Web-Oriented Writing&\\
+	&Social Media Management&\\
+	&Community Management&\\
+	
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS AND ACTIVITIES
+%----------------------------------------------------------------------------------------
+
+\section{Interests and Activities}
+
+{\large Programming, History and Philoshopy of Science, Mathematics, Open Source\\
+\\
+History, Communication of Science, Geopolitics, Philosophy of the Mind\\
+\\
+Internet Culture, Martial Arts, Videogaming and Videoludic Arts}
+
+%----------------------------------------------------------------------------------------
+%----------------------------------------------------------------------------------------
+
+\section{Languages}
+
+\begin{tabular}{rl}
+	\textsc{English:} & Fluent\\
+	
+	\textsc{Italian:} & Native Speaker\\
+	
+\end{tabular}
+
+
+\end{document}
