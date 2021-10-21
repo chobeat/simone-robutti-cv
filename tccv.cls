@@ -112,7 +112,8 @@
     \begin{tabularx}{\boxwidth}{c|X}
     \Writinghand & {#2}\smallskip\\
     \Letter      & \href{mailto:#3}{#3}
-    \ifstrempty{#1}{}{\smallskip\\ \Lightning & \href{http://#1}{#1}}
+    \ifstrempty{#1}{}{\smallskip\\ \Industry & \href{#1}{#1}}
+    \ifstrempty{#4}{}{\smallskip\\ \Gentsroom & \href{#4}{#4}}\\
     \end{tabularx}}}
 
 % Every \item can be followed by one or more paragraphs
