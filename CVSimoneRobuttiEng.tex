@@ -1,212 +1,111 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Plasmati Graduate CV
-% LaTeX Template
-% Version 1.0 (24/3/13)
-%
-% This template has been downloaded from:
-% http://www.LaTeXTemplates.com
-%
-% Original author:
-% Alessandro Plasmati (alessandro.plasmati@gmail.com)
-%
-% License:
-% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
-%
-% Important note:
-% This template needs to be compiled with XeLaTeX.
-% The main document font is called Fontin and can be downloaded for free
-% from here: http://www.exljbris.com/fontin.html
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%----------------------------------------------------------------------------------------
-%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
-%----------------------------------------------------------------------------------------
-
-\documentclass[a4paper,10pt]{article} % Default font size and paper size
-\usepackage{multirow}
-\usepackage{fontspec} % For load	ing fonts
-\defaultfontfeatures{Mapping=tex-text}
-\setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin} % Main document font
-
-\usepackage{xunicode,xltxtra,url,parskip} % Formatting packages
-
-\usepackage[usenames,dvipsnames]{xcolor} % Required for specifying custom colors
-\usepackage{array}
-\usepackage[big]{layaureo} % Margin formatting of the A4 page, an alternative to layaureo can be \usepackage{fullpage}
-% To reduce the height of the top margin uncomment: \addtolength{\voffset}{-1.3cm}
-
-\usepackage{hyperref} % Required for adding links	and customizing them
-\definecolor{linkcolour}{rgb}{0,0.2,0.6} % Link color
-\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour} % Set link colors throughout the document
-
-\usepackage{titlesec} % Used to customize the \section command
-\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule] % Text formatting of sections
-\titlespacing{\section}{3pt}{4pt}{3pt} % Spacing around sections
-
+\documentclass{tccv}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
 \begin{document}
 
-\newcommand{\spezzalinea}{
-	\multicolumn{1}{r}{}&\\
-}
+\part{Simone Robutti}
 
-\pagestyle{empty} % Removes page numbering
+\begin{eventlist}
 
-\font\fb=''[cmr10]'' % Change the font of the \LaTeX command under the skills section
+\item{Jan 2022 - Dec 2023}
+     {AI Forensics}
+     {Data Engineer, Organization Designer}
 
-%----------------------------------------------------------------------------------------
-%	NAME AND CONTACT INFORMATION
-%----------------------------------------------------------------------------------------
+First year: organizational development of all the decision-making and operational processes and institutions of AI Forensics. Second year: development of an end-to-end experiment platform to interrogate LLM chatbots and RAG systems (i.e. Bing Chat, Bard). Leadership of a project investigating the impact of LLMs on electoral integrity in Switzerland and Bavaria.
 
-\par{\centering{\Huge Simone \textsc{Robutti}}\bigskip\par} % Your name
-\begin{minipage}{\textwidth}
+\item{Mar 2017- Dec 2021}
+     {Teraki, Berlin}
+     {Team Leader, BE+ML engineer}
 
-\begin{minipage}[t]{0.65\textwidth}
-\section{Personal Information}
-\begin{tabular}{rl}
-\textsc{Place and Date of Birth:} & Italy  | 2 December 1988 \\
-\textsc{Address:} & Keibelstr. 37, 10178, Berlin \\
-\textsc{Phone:} & (Ask Privately)\\
-\textsc{email:} & \href{mailto:simone.robutti@gmail.com}{simone.robutti@gmail.com}
-\end{tabular}
+Development of user-facing REST API Platform to run proprietary ML pipelines on small and big user datasets. Development of internal tools for Data Scientists. In-depth testing of REST API. Maintenance of development tools, CI and CD. Productization of ML algorithms developed by the data scientist. Coordination of the BE team. Involvement in planning and analysis activities alongside other team leaders and C-level.
 
-\end{minipage}
-\hfill
-\begin{minipage}[t]{0.25\textwidth}
-\section{\hfill Keywords}
-\raggedleft
 
-Scala
+\item{Nov 2016- Jan 2017}
+     {MotionLogic, Berlin}
+     {Data Engineer}
 
-Apache Flink
+Development of the company's core product: a system to ingest and process cellular network signals to extract information through ad-hoc models. Productization of existing algorithms developed by the Data Science Team, development of new models on my own, development of a data quality monitoring system, performance optimization.
 
-Apache Spark
 
-Python
+\noindent\hfil\rule{0.3\textwidth}{.4pt}
 
-Machine Learning 
+\item{Feb 2016 - Nov 2016}
+{Databiz - Radicalbit, Milan}
+{Machine Learning Engineer}
 
-ML Engineering
+As the only Machine Learning Engineer, my work involved designing new solutions for our customers to make use of Flink, core component of our distribution. Also, I've been involved in the open-source development of FlinkML and FlinkJPMML.
 
-Big Data/Fast-Data
-\end{minipage}
+\noindent\hfil\rule{0.3\textwidth}{.4pt}
 
-\end{minipage}
+\item{Apr 2015 - Feb 2016}
+{Databiz, Milan}
+{Machine Learning Engineer}
 
-%----------------------------------------------------------------------------------------
-%	EDUCATION
-%----------------------------------------------------------------------------------------
+Design and implementation of a near-real-time scoring streaming system using Apache Spark, Knime, Hbase, JPPML, Hive.
+
+\end{eventlist}
+
+\personal
+    [https://github.com/chobeat/]
+    {Keibelstr. 37, 10178, Berlin}
+    {simone.robutti@gmail.com}
+    {https://robutti.me}
 
 \section{Education}
 
-\begin{tabular}{rp{11cm}}	
-\textsc{2013-2015} & Master's Degree in \textsc{Computer Science}, \textbf{Università degli Studi di Milano}, Milan\\
-& \footnotesize{Research Thesis on the design, development and evaluation of a Support Vector approach to the  disambiguation of fuzzy and shadowed datasets in a semi-supervised context.} \\ &\small Advisor: \textsc{Prof. Dario Malchiodi} \\
+\begin{yearlist}
 
-%------------------------------------------------
-	
-\textsc{2009-2012} & Bachelor Degree in \textsc{Computer Science}, \textbf{Università degli Studi di Milano}, Milan\\
-& \footnotesize{Thesis on the development of a highly-modular, resource agnostic tagging system for a CMS platform oriented to e-Democracy and e-participation.} \\ &\small Advisor: \textsc{Prof. Fiorella DeCindio}
-\end{tabular}
+\item[Master Degree]{2012-2015}
+     {Computer Science}
+     {Università degli Studi di Milano}
+
+\item[Bachelor Degree]{2007-2012}
+{Computer Science}
+{Università degli Studi di Milano}
+
+\item[High School Diploma]{2002-2007}
+{Scientific specialization}
+{Liceo Galileo Galilei, Alessandria}
 
 
 
-%----------------------------------------------------------------------------------------
-%	WORK EXPERIENCE 
-%----------------------------------------------------------------------------------------
-\section{Work Experience}
+\end{yearlist}
 
-\begin{tabular}{r|p{11cm}}
-\textsc{from Nov 2016} & Data Engineer in \textsc{MotionLogic}, Berlin \emph{}\\
-& \footnotesize{Development and testing of the company's core product: a system to ingest and process cellular network signals to extract complex informations through ad-hoc models and traditional aggregations. My role as a Data Engineer covered many different tasks over time: productization of existing algorithms developed by the Data Science Team, development of new models and heuristics on my own, development and maintenance of the pipeline, development of a data quality monitoring system, production and improvement of geospatial support data, performance optimization at scale.}\\
-\multicolumn{1}{c}{} \\
-	
-\textsc{from Feb 2016} & Machine Learning Engineer in \textsc{Databiz - Radicalbit}, Milan \emph{}\\
-& \footnotesize{As the only Machine Learning Engineer, my work involved designing new solutions for our customers to make use of Flink, core component of our distribution. Also I've been involved in the open-source development of FlinkML and FlinkJPMML. I had the possibility to implement many different algorithms from scratch and experiment with the many possibilities offered by the framework to carry out ML tasks at scale. Other relevant components of the distribution were: Cassandra, Kafka, Zeppelin, Alluxio.}\\
-\multicolumn{2}{c}{} \\
+\section{Public projects}
 
-\textsc{from Apr 2015} & Machine Learning Engineer in \textsc{Databiz}, Milan \emph{}\\
-& \footnotesize{Design and implementation of a near-real-time scoring streaming system. The end-goal was to provide the user with a flexible system based on Apache Spark to design ML pipelines for data preparation and batch learning on Knime and deploy the models created for scoring in streaming. The project involved a model repository with a front-end component, a data validation and reconciliation process. Other tools employed in the project were: HBase, JPMML, Hive, Impala.}\\
-\multicolumn{2}{c}{} \\
+\begin{yearlist}
 
-\end{tabular}
+\item{2021}
+     {mobilizon-reshare (\href{https://github.com/Tech-Workers-Coalition-Italia/mobilizon-reshare}{github.com/Tech-Workers-Coalition-Italia/mobilizon-reshare})}
+     {Suite for automated event promotion on social media}
+\item{2019}
+     {pyscaffoldext-custom-extension  (\href{github.com/pyscaffold/pyscaffoldext-custom-extension})}
+     {Pyscaffold extension to create pyscaffold extensions}
+\item{2017}
+     {scala-json-feed (\href{https://github.com/chobeat/scala-json-feed}{github.com/chobeat/scala-json-feed})}
+     {Scala library for JSON Feed}
 
-%	GRADE TABLES
-%----------------------------------------------------------------------------------------
-\section{Skills}
-\begin{tabular}{>{\normalsize}r|>{\large}l>{\normalsize}l}
-	
-	\multirow{5}{*}{Programming Languages} 
-	& Python & Advanced \\
-	& Scala & Intermediate \\
-	& Java & Intermediate \\
-	& Javascript & Basic \\
-	
-	\spezzalinea
-	\multirow{3}{*}{Frameworks and Tools} 
-	& Apache Spark & Intermediate-Advanced \\
-	& Apache Flink & Intermediate \\
-	& Pandas & Intermediate\\
-	& Play! Framework & Intermediate \\
-	& Keras & Basic\\	
-	& Akka & Basic\\
-	& breeze & Basic\\
-	\spezzalinea
-	
-	\multirow{4}{*}{Machine Learning}
-	& SVM & Intermediate\\
-	& Deep Learning & Basic\\
-	& Genetic Algorithms & Basic\\
-	& ALS & Basic\\
-	& PMML & Intermediate \\
-	\spezzalinea
-	
-	\multirow{4}{*}{Database} & PostgreSQL & Intermediate \\
-	& MongoDB & Intermediate \\
-	& Cassandra/Scylla & Basic \\
-	& MariaDB/MySQL & Basic \\
-	& InfluxDB & Basic \\
-	\spezzalinea
-	
-	\multirow{5}{*}{Building systems}\\
-	& Maven \\
-	& sbt \\
-	& setuptools \\
-	 
-	\spezzalinea
-	
-	\multirow{4}{*}{Non-technical skills} 
-	
-	&Online Communication&\\
-	&Web-Oriented Writing&\\
-	&Social Media Management&\\
-	&Community Management&\\
-	
-\end{tabular}
 
-%----------------------------------------------------------------------------------------
-%	INTERESTS AND ACTIVITIES
-%----------------------------------------------------------------------------------------
+\end{yearlist}
 
-\section{Interests and Activities}
+\section{Technical skills}
 
-{\large Programming, History and Philoshopy of Science, Mathematics, Open Source\\
-\\
-History, Communication of Science, Geopolitics, Philosophy of the Mind\\
-\\
-Internet Culture, Martial Arts, Videogaming and Videoludic Arts}
+\begin{factlist}
 
-%----------------------------------------------------------------------------------------
-%----------------------------------------------------------------------------------------
+\item{Technical}
+     {Python, Scala, Docker, Airflow, fastapi, Spark, Flink, SQL, MongoDB, SQLITE, PostgreSQL, InfluxDB, Grafana, pandas, matplotlib, GraphQL, Appium, git, yarn, JSON, maven, sbt, setuptools, tox, poetry}
 
-\section{Languages}
+\item{Organizational}
+{Sociocracy, Holacracy, Ecosystemic Design, Agile, Governance Design, Process Design, Process Mapping, Strategy Development, Nonviolent Communication}
 
-\begin{tabular}{rl}
-	\textsc{English:} & Fluent\\
-	
-	\textsc{Italian:} & Native Speaker\\
-	
-\end{tabular}
 
+\item{No Code}
+     {Notion, Airtable, Zapier, Strapi, n8n}
+
+\item{Studying}
+    {Typescript, Rust, Elixir, Diffusion Models, 3EO}
+
+\end{factlist}
 
 \end{document}
